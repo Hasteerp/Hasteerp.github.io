@@ -1,7 +1,14 @@
+# ECE 444-2024 PRA 1
+#### Name: Payas Hasteer 
+#### Student Number: 1006823751
+
+
+#### This repository is a clone of the following Github Repository:
+> [Github Repository](https://github.com/varadbhogayata/varadbhogayata.github.io)
+
+
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
-
-> https://varadbhogayata.github.io
 
 ![GitHub stars](https://img.shields.io/github/stars/varadbhogayata/varadbhogayata.github.io) 
 ![GitHub forks](https://img.shields.io/github/forks/varadbhogayata/varadbhogayata.github.io)
