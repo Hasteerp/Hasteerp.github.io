@@ -10,11 +10,18 @@
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
-### Website Preview
+### Website Preview - Activity 2
 <p align="center"> 
   <kbd>
     <a href="https://hasteerp.github.io" target="_blank"><img src="examples/preview.gif">
   </a>
+  </kbd>
+</p>
+
+### Website Preview - Activity 3
+<p align="center"> 
+  <kbd>
+    <a href="https://hasteerp.github.io" target="_blank"><img src="examples/ece444-color-change-portfolio.gif"></a>
   </kbd>
 </p>
 
