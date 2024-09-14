@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #EDE8F5 repeat;
   position: relative;
 }
 
@@ -459,7 +459,7 @@ h3 {
 }
 
 a.hoverline {
-  border-bottom: 3px solid transparent !important;
+  border-bottom: 2px solid transparent !important;
   padding: 3px 3px 0 3px;
   transition: 0.25s all;
   -moz-transition: 0.25s all;
@@ -546,25 +546,13 @@ small {
   color: #666 !important;
 }
 
-/* main .teal-text */
-
 .teal-text {
   color: #8697C4 !important;
 }
 
-/* .teal-text {
-  color: #0b5e86 !important;
-} */
-
-/* .teal */
-
 .teal {
   background-color: #ADBBDA !important;
 }
-
-/* .teal {
-  background-color: #00695c !important;
-} */
 
 @media (min-width: 1200px) {
   #experience .container {
@@ -602,7 +590,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: #ADBBDA;
     height: 56px;
     line-height: 56px;
   }
