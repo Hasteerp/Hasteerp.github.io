@@ -28,6 +28,17 @@
   right: 0;
 }
 
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .social {
   margin: 0 auto;
