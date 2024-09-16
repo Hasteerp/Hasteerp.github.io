@@ -436,7 +436,7 @@
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
-
+          <div id="resume-projects" class="recent-projects"></div>
           <div class="col s12 m6">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -643,6 +643,13 @@
       </div>
     </section>
   </main>
+
+  <script src="projects.js"></script>
+  <script>
+    import Projects from "projects";
+
+    document.addEventListener('DOMContentLoaded', Projects);
+  </script>
 
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
