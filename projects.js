@@ -67,7 +67,7 @@ export default function Projects() {
     loadMoreButton.addEventListener('click', () => {
         loadMoreButton.remove();
 
-        projects.slice(1).forEach((project) => {
+        sortedProjects.slice(1).forEach((project) => {
             addProjectCard(project);
         });
     });
