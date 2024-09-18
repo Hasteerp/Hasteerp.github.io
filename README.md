@@ -25,6 +25,20 @@
   </kbd>
 </p>
 
+### Website Preview - Activity 4
+<p align="center"> 
+  <kbd>
+    <a href="https://hasteerp.github.io" target="_blank"><img src="examples/ece444-google-maps-integration.gif"></a>
+  </kbd>
+</p>
+
+### Website Preview - Activity 5
+<p align="center"> 
+  <kbd>
+    <a href="https://hasteerp.github.io" target="_blank"><img src="examples/ece444-dom-manipulation.gif"></a>
+  </kbd>
+</p>
+
 ## Features 📋
 ⚡️ Fully Responsive\
 ⚡️ Mobile View Friendly\
