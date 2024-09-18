@@ -436,63 +436,9 @@
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
-
-          <div class="col s12 m6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Ging Maps" src="/assets/img/ece444-maps.jpg" style="height: 100%; width: 100%; object-fit: contain" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Ging Maps<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A geological mapping platform for cities like Toronto, Tokyo, and London.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                        class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> EZGL Library, C++</li>
-                  <li>Used Dijkstra’s Algorithm + A* to find shortest path.</li>
-                  <li>Used a multi-start smart-greedy approach for traveling salesman problem.</li>
-                  <li>Optimized search using multithreading and 2-opt.</li>
-                  <li>Designed UI using the ezgl library to visualize POIs and roads, highlighting intersections.</li>
-                  <li>Implemented search feature while taking into consideration different zoom levels.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/ece444-productO.png" style="height: 100%; width: 100%; object-fit: contain" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Product O<i
-                        class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Image and Audio to text transcribing tool
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                        class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Python, Google Vision API, Google Cloud API</li>
-                  <li>Used Python for backend logic.</li>
-                  <li>Google Cloud API for speech-to-text and image processing, and Cloud Storage for file handling.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- ************* -->
+          <div id="resume-projects" class="recent-projects"></div>
         </div>
+        <button id="loadMore" class="btn waves-effect waves-light">Load More</button>
       </div>
     </section>
 
@@ -643,6 +589,11 @@
       </div>
     </section>
   </main>
+
+  <script type="module">
+    import Projects from "./projects.js";
+    document.addEventListener('DOMContentLoaded', Projects);
+  </script>
 
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
