@@ -35,20 +35,20 @@ export default function Projects() {
         projectCard.innerHTML = `
         <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
-            <img alt="${projects[0].name}" src="${projects[0].image_src}" style="height: 100%; width: 100%; object-fit: contain" class="activator" />
+            <img alt="${project.name}" src="${project.image_src}" style="height: 100%; width: 100%; object-fit: contain" class="activator" />
           </div>
           <div class="card-content">
-            <span class="card-title activator teal-text hoverline">${projects[0].name}<i
+            <span class="card-title activator teal-text hoverline">${project.name}<i
                 class="mdi-navigation-more-vert right"></i></span>
             <p>
-              ${projects[0].description}
+              ${project.description}
             </p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
             <ul>
-              <li><b>Tools:</b> ${projects[0].tools_used}</li>
+              <li><b>Tools:</b> ${project.tools_used}</li>
               ${listItems}
             </ul>
           </div>
