@@ -27,11 +27,12 @@ export default function Projects() {
         },
     ];
 
-    const projectCard = document.createElement('div');
-    projectCard.className = 'col s12 m6';
-    let listItems = projects[0].detailed_list.map(item => `<li>${item}</li>`).join('');
+    function addProjectCard(project) {
+        const projectCard = document.createElement('div');
+        projectCard.className = 'col s12 m6';
+        let listItems = project.detailed_list.map(item => `<li>${item}</li>`).join('');
 
-    projectCard.innerHTML = `
+        projectCard.innerHTML = `
         <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img alt="${projects[0].name}" src="${projects[0].image_src}" style="height: 100%; width: 100%; object-fit: contain" class="activator" />
@@ -52,8 +53,19 @@ export default function Projects() {
             </ul>
           </div>
         </div>
-    `;
+        `;
+        projectSection.appendChild(projectCard);
+    }
 
     const projectSection =  document.getElementById('resume-projects');
-    projectSection.appendChild(projectCard);
+    const loadMoreButton = document.getElementById('loadMore');
+
+    addProjectCard(projects[0]);
+    loadMoreButton.addEventListener('click', () => {
+        loadMoreButton.remove();
+
+        projects.slice(1).forEach((project) => {
+            addProjectCard(project);
+        });
+    });
 }
