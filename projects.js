@@ -6,7 +6,7 @@ export default function Projects() {
             name: 'Ging Maps',
             image_src: '/assets/img/ece444-maps.jpg',
             description: 'A geological mapping platform for cities like Toronto, Tokyo, and London.',
-            date: '07/01/2021',
+            date: '07/01/2023',
             detailed_list: [
                 'Used Dijkstra’s Algorithm + A* to find shortest path.',
                 'Used a multi-start smart-greedy approach for traveling salesman problem.',
