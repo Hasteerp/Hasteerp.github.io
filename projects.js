@@ -62,7 +62,7 @@ export default function Projects() {
     const projectSection =  document.getElementById('resume-projects');
     const loadMoreButton = document.getElementById('loadMore');
 
-    const sortedProjects = projects.sort((a, b) => new Date(a.date) - new Date(b.date));
+    const sortedProjects = projects.sort((a, b) => new Date(b.date) - new Date(a.date));
     addProjectCard(sortedProjects[0]);
     loadMoreButton.addEventListener('click', () => {
         loadMoreButton.remove();
