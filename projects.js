@@ -29,6 +29,8 @@ export default function Projects() {
 
     const projectCard = document.createElement('div');
     projectCard.className = 'col s12 m6';
+    let listItems = projects[0].detailed_list.map(item => `<li>${item}</li>`).join('');
+
     projectCard.innerHTML = `
         <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
@@ -42,13 +44,11 @@ export default function Projects() {
             </p>
           </div>
           <div class="card-reveal">
-            <!-- TODO: change this -- only close button -->
-            <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
             <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
             <ul>
               <li><b>Tools:</b> ${projects[0].tools_used}</li>
-              ${projects[0].detailed_list.map((item) => <li>${item}</li>)}
+              ${listItems}
             </ul>
           </div>
         </div>
