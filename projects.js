@@ -6,6 +6,7 @@ export default function Projects() {
             name: 'Ging Maps',
             image_src: '/assets/img/ece444-maps.jpg',
             description: 'A geological mapping platform for cities like Toronto, Tokyo, and London.',
+            date: '07/01/2023',
             detailed_list: [
                 'Used Dijkstra’s Algorithm + A* to find shortest path.',
                 'Used a multi-start smart-greedy approach for traveling salesman problem.',
@@ -17,6 +18,7 @@ export default function Projects() {
         },
         {
             name: 'Product O',
+            date: '10/31/2022',
             image_src: '/assets/img/ece444-productO.png',
             description: 'Image and Audio to text transcribing tool.',
             detailed_list: [
@@ -60,11 +62,12 @@ export default function Projects() {
     const projectSection =  document.getElementById('resume-projects');
     const loadMoreButton = document.getElementById('loadMore');
 
-    addProjectCard(projects[0]);
+    const sortedProjects = projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+    addProjectCard(sortedProjects[0]);
     loadMoreButton.addEventListener('click', () => {
         loadMoreButton.remove();
 
-        projects.slice(1).forEach((project) => {
+        sortedProjects.slice(1).forEach((project) => {
             addProjectCard(project);
         });
     });
